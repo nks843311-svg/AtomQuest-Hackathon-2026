@@ -3,6 +3,7 @@ const mysql = require("mysql2");
 const cors = require("cors");
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -552,7 +553,7 @@ app.put("/unlockgoal/:id",(req,res)=>{
 });
 
 
-app.listen(5000,()=>{
+app.listen(PORT,()=>{
 
     console.log("Server Running On Port 5000");
 });
