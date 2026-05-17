@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app{
+    height: 100vh;
+
+    background-image: url("./unnamed.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.title{
+    background-color: #98a4be;
+
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+
+    font-size: 32px;
+
+    width: fit-content;
+    margin: 100px auto;
+}
+
+.navbar{
+    background-color: rgba(51, 51, 51, 0.4);
+
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.navbar a:hover{
+    color: #2563EB;
+}
+.register-form{
+
+    width: 350px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.register-form h1{
+    text-align: center;
+    color: #2563EB;
+}
+
+.register-form input,
+.register-form select{
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid gray;
+
+    border-radius: 5px;
+}
+
+.register-form button{
+
+    padding: 12px;
+
+    border: none;
+
+    background-color: #2563EB;
+
+    color: white;
+
+    font-size: 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.about-section{
+
+    width: 80%;
+
+    margin: 100px auto;
+
+    background-color: rgba(255,255,255,0.9);
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.about-section h2{
+    color: #2563EB;
+}
+.container{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0F172A;
+}
+
+.login-form{
+
+    width: 350px;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.login-form h1{
+    text-align: center;
+    color: #2563EB;
+}
+
+.login-form input{
+
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid gray;
+
+    border-radius: 5px;
+}
+
+.login-form button{
+
+    padding: 12px;
+
+    border: none;
+
+    background-color: #2563EB;
+
+    color: white;
+
+    font-size: 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.login-form button:hover{
+    background-color: #1D4ED8;
+}
+.navbar{
+    background-color: black;
+    padding: 15px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
+}
