@@ -10,7 +10,7 @@
     "mysql2": "^3.22.3",
 
     "cors": "^2.8.6",
-1afb9578 (add cors dependency fix)
+
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.15.1",
