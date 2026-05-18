@@ -1,0 +1,60 @@
+{
+  "name": "goal-portal",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD\r # AtomQuest-Hackathon-2026\r The Goal Management Portal is a web application made using React, Node.js, Express, and MySQL. It helps companies manage employee goals in a simple and organized way. The system has three roles: Employee, Manager, and Admin.\r =======\r # Getting Started with Create React App",
+  "main": "index.js",
+  "dependencies": {
+    "ansi-regex": "^5.0.1",
+    "aria-query": "^5.3.2",
+    "aws-ssl-profiles": "^1.1.2",
+    "css.escape": "^1.5.1",
+    "denque": "^2.1.0",
+    "dequal": "^2.0.3",
+    "dom-accessibility-api": "^0.5.16",
+    "generate-function": "^2.3.1",
+    "indent-string": "^4.0.0",
+    "is-property": "^1.0.2",
+    "js-tokens": "^4.0.0",
+    "long": "^5.3.2",
+    "lru.min": "^1.1.4",
+    "lz-string": "^1.5.0",
+    "min-indent": "^1.0.1",
+    "mysql2": "^3.22.3",
+    "named-placeholders": "^1.1.6",
+    "picocolors": "^1.1.1",
+    "pretty-format": "^27.5.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-is": "^17.0.2",
+    "react-router": "^7.15.1",
+    "react-router-dom": "^7.15.1",
+    "react-scripts": "^0.0.0",
+    "redent": "^3.0.0",
+    "safer-buffer": "^2.1.2",
+    "scheduler": "^0.27.0",
+    "set-cookie-parser": "^2.7.2",
+    "sql-escaper": "^1.3.3",
+    "strip-indent": "^3.0.0",
+    "undici-types": "^7.24.6",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nks843311-svg/AtomQuest-Hackathon-2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nks843311-svg/AtomQuest-Hackathon-2026/issues"
+  },
+  "homepage": "https://github.com/nks843311-svg/AtomQuest-Hackathon-2026#readme"
+}
