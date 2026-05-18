@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const mysql = require("mysql2");
 const cors = require("cors");
@@ -8,24 +9,25 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
-    port: process.env.DB_PORT
+    port: process.env.DB_PORT || 3306,
+    waitForConnections: true,
+    connectionLimit: 10,
+    queueLimit: 0,
+    connectTimeout: 20000
 });
-
-db.connect((err)=>{
-
-    if(err){
-        console.log(err);
+db.getConnection((err, connection) => {
+    if (err) {
+        console.error("❌ Database connection failed:", err.message);
+        return;
     }
-    else{
-        console.log("MySQL Connected");
-    }
+    console.log("Successfully connected to Railway MySQL Pool!");
+    connection.release(); // Crucial: releases the connection back to the pool
 });
-
 
 // LOGIN
 app.post("/login",(req,res)=>{
