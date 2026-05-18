@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom'; // Required because Home.js uses <Link>
-import Home from './Home'; // Imports your homepage layout
-import './index.css'; // Imports your styles
+import App from './App'; // Points to your App.js
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Home />
-    </BrowserRouter>
+    <App /> {/* Loads App.js so your routes actually work */}
   </React.StrictMode>
 );
