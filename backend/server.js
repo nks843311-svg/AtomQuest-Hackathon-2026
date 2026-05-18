@@ -22,13 +22,17 @@ const db = mysql.createPool({
 });
 db.getConnection((err, connection) => {
     if (err) {
-        console.error("❌ Database connection failed:", err.message);
+        console.error("Database connection failed:", err.message);
         return;
     }
     console.log("Successfully connected to Railway MySQL Pool!");
     connection.release(); // Crucial: releases the connection back to the pool
 });
-
+//backend page message
+// Add this so the browser gets a response on the homepage "/"
+app.get("/", (req, res) => {
+   res.send("Goal Portal Backend Server is running successfully and connected to the database!");
+}); 
 // LOGIN
 app.post("/login",(req,res)=>{
 
